@@ -82,13 +82,61 @@ main {
 
 .section-left {
   height: 85vh;
-  width: 16%;
-  background-color: aqua;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0 20px 0;
+}
+.section-left .btn-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-direction: row;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+.section-left .btn-left img {
+  width: 38px;
+  height: auto;
+}
+.section-left .dashboard-btn {
+  background: linear-gradient(0.25turn, #CC00FF, #1970D6, #FAFF00);
+  border-radius: 10px;
+  font-size: 30px;
+  color: black;
+}
+.section-left .dashboard-btn img {
+  width: 40px;
+  height: auto;
+}
+.section-left .all-btn-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.section-left .left-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .section-mid {
   height: 85vh;
-  width: 59%;
+  width: 55%;
 }
 
 .section-right {

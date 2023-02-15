@@ -1,6 +1,43 @@
 @use 'mixins';
 .section-left{
     height: 85vh;
-    width: 16%;
-    background-color: aqua;
+    width: 20%;
+    // background-color: aqua;
+    @include mixins.flexdef();
+    justify-content: space-between;
+    padding: 40px 0 20px 0;
+    .btn-left{
+        @include mixins.flexdef(10px);
+        flex-direction: row;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        img{
+            width: 38px;
+            height: auto;
+        }
+        font-size: 28px;
+        background-color: transparent;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+
+    }
+    .dashboard-btn{
+        background: linear-gradient(0.25turn, #CC00FF, #1970D6, #FAFF00);
+        border-radius: 10px;
+        img{
+            width: 40px;
+            height: auto;
+        }
+        font-size: 30px;
+        color: black;
+    }
+
+    .all-btn-left{
+        @include mixins.flexdef(10px);
+        align-items: flex-start;
+    }
+
+    .left-top{
+        @include mixins.flexdef(50px);
+    }
 }

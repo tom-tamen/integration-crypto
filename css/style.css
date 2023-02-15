@@ -137,6 +137,167 @@ main {
 .section-mid {
   height: 85vh;
   width: 55%;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.section-mid .mid-top {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: row;
+}
+.section-mid .mid-top .mid-top-left {
+  width: 30%;
+  height: 100%;
+}
+.section-mid .mid-top .mid-top-left h2 {
+  color: #CCCCCC;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.section-mid .mid-top .mid-top-left .tag-btc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  flex-direction: row;
+  font-weight: bolder;
+  font-size: 25px;
+  width: fit-content;
+}
+.section-mid .mid-top .mid-top-left .tag-btc p {
+  color: #ffffff;
+}
+.section-mid .mid-top .mid-top-left .tag-btc span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 15px;
+  background-color: #FAFF00;
+  color: black;
+  padding: 0px 3px 0px 3px;
+  border-radius: 7px;
+}
+.section-mid .mid-top .mid-top-left p {
+  color: #B2B2B2;
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-mid .mid-top .mid-top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+.section-mid .mid-top .mid-top-right .tabs-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #292727;
+  width: 60%;
+  height: 50%;
+  border-radius: 20px;
+  padding: 0px 10px 0px 10px;
+}
+.section-mid .mid-top .mid-top-right .tabs-top button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 20%;
+  height: 60%;
+  border-radius: 15px;
+  font-size: 16px;
+}
+.section-mid .mid-top .mid-top-right .tabs-top button.selected {
+  background-color: #0D0C0C;
+}
+.section-mid .mid-mid {
+  width: 100%;
+  height: 60%;
+}
+.section-mid .mid-bot {
+  width: 100%;
+  height: 25%;
+}
+.section-mid .mid-bot .mid-bot-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  font-weight: bolder;
+}
+.section-mid .mid-bot .mid-bot-title h2 {
+  color: white;
+  font-size: 20px;
+}
+.section-mid .mid-bot .mid-bot-title a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.section-mid .mid-bot .transactions-recap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 10px;
+}
+.section-mid .mid-bot .transactions-recap .transaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 6vh;
+  background-color: rgba(32, 35, 43, 0.7);
+  filter: drop-shadow(0 0 8px #20232B);
+  border-radius: 20px;
+}
+.section-mid .mid-bot .transactions-recap .transaction .crypto-logo {
+  width: 46px;
+}
+.section-mid .mid-bot .transactions-recap .transaction .crypto-name {
+  font-family: "Inter", sans-serif;
+}
+.section-mid .mid-bot .transactions-recap .transaction .market-cap p:nth-child(2) {
+  color: #1970D6;
+}
+.section-mid .mid-bot .transactions-recap .transaction .market-cap .eth-color-1 {
+  color: #6C1182 !important;
+}
+.section-mid .mid-bot .transactions-recap .transaction .info p:nth-child(2) {
+  color: #4AD619;
+}
+.section-mid .mid-bot .transactions-recap .transaction .info .eth-color-2 {
+  color: #D61919 !important;
+}
+.section-mid .mid-bot .transactions-recap .transaction button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 10%;
+  height: 60%;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: black;
 }
 
 .section-right {

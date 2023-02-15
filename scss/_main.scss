@@ -1,0 +1,7 @@
+@use 'mixins';
+
+main{
+    width: 100vw;
+    @include mixins.flexdef;
+    flex-direction: row;
+}

@@ -263,11 +263,12 @@ main {
   flex-direction: column;
   color: white;
   justify-content: space-around;
+  box-shadow: 0 0 2px #20232B, 0 0 8px #20232B, 0 0 12px #20232B;
   flex-direction: row;
   width: 100%;
   height: 6vh;
   background-color: rgba(32, 35, 43, 0.7);
-  filter: drop-shadow(0 0 8px #20232B);
+  filter: drop-shadow(0 0 2px #20232B);
   border-radius: 20px;
 }
 .section-mid .mid-bot .transactions-recap .transaction .crypto-logo {
@@ -303,6 +304,97 @@ main {
 .section-right {
   height: 85vh;
   width: 25%;
+  padding: 0 2% 0 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+.section-right h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+.section-right .recent-transactions {
+  width: 100%;
+}
+.section-right .recent-transactions .transaction {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.section-right .recent-transactions .transaction .transaction-status, .section-right .recent-transactions .transaction .transaction-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+.section-right .recent-transactions .transaction .transaction-status p:nth-child(2) {
+  color: #B2B2B2;
+}
+.section-right .recent-transactions .transaction .transaction-details .positive {
+  color: #4AD619;
+}
+.section-right .recent-transactions .transaction .transaction-details .negative {
+  color: #D61919;
+}
+.section-right .recent-transactions .transaction .transaction-details p:nth-child(2) {
+  color: #B2B2B2;
+}
+.section-right .assets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  width: 100%;
+}
+.section-right .assets .asset:nth-child(2) {
+  color: black;
+}
+.section-right .assets .asset:nth-child(2) {
+  background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+}
+.section-right .assets .asset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  height: 15vh;
+  align-items: flex-start;
+  padding: 10%;
+  background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+  border-radius: 30px;
+}
+.section-right .assets .asset img {
+  width: 64px;
+}
+.section-right .assets .asset .asset-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

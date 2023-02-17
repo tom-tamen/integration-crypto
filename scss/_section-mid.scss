@@ -14,21 +14,38 @@
         gap: 50px;
     }
 
+    @include mixins.breakpoint(1000px) {
+        width: 100%;
+        height: fit-content;
+    }
+
     .mid-top {
         width: 100%;
         height: 15%;
         @include mixins.flexdef;
         flex-direction: row;
 
+        @include mixins.breakpoint(800px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
         .mid-top-left {
             width: 30%;
             height: 100%;
+
+            
 
             //background-color: rgb(255, 0, 0);
             h2 {
                 color: #CCCCCC;
                 font-weight: bolder;
                 font-size: 20px;
+
+                @include mixins.breakpoint(800px) {
+                    font-size: 14px;
+                }
             }
 
             .tag-btc {
@@ -50,6 +67,9 @@
                     color: black;
                     padding: 0px 3px 0px 3px;
                     border-radius: 7px;
+                    @include mixins.breakpoint(800px) {
+                        font-size: 10px;
+                    }
                 }
             }
 
@@ -57,6 +77,9 @@
                 color: #B2B2B2;
                 font-weight: bold;
                 font-size: 18px;
+                @include mixins.breakpoint(800px) {
+                    font-size: 14px;
+                }
             }
         }
 
@@ -65,6 +88,9 @@
             width: 70%;
             height: 100%;
 
+            @include mixins.breakpoint(800px) {
+                width: 100%;
+            }
             //background-color: rgb(255, 0, 251);
             .tabs-top {
                 @include mixins.flexdef();
@@ -81,6 +107,10 @@
                     width: 100%;
                 }
 
+                @include mixins.breakpoint(800px) {
+                    height: 8vh;
+                }
+
                 button {
                     background-color: transparent;
                     border: none;
@@ -91,6 +121,10 @@
                     border-radius: 15px;
                     font-size: 16px;
 
+                    @include mixins.breakpoint(800px) {
+                        font-size: 12px;
+                    }
+                    
                     &.selected {
                         background-color: #0D0C0C;
                     }
@@ -124,6 +158,10 @@
             justify-content: space-between;
             margin-bottom: 10px;
 
+            @include mixins.breakpoint(800px) {
+                flex-direction: column;
+                gap: 20px;
+            }
             .left-tab {
                 @include mixins.flexdef(8px);
                 flex-direction: row;
@@ -222,12 +260,25 @@
             h2 {
                 color: white;
                 font-size: 20px;
+                @include mixins.breakpoint(1330px) {
+                    font-size: 15px;
+                }
+                @include mixins.breakpoint(800px) {
+                    font-size: 12px;
+                }
             }
 
             a {
                 font-size: 20px;
                 text-decoration: none;
-                color: rgba($color: white, $alpha: .7)
+                color: rgba($color: white, $alpha: .7);
+                @include mixins.breakpoint(1330px) {
+                    font-size: 15px;
+                }
+                @include mixins.breakpoint(800px) {
+                    font-size: 12px;
+                }
+                
             }
         }
 
@@ -256,10 +307,16 @@
 
                 .crypto-logo {
                     width: 46px;
+                    @include mixins.breakpoint(800px) {
+                        width: 30px;
+                    }
                 }
 
                 .crypto-name {
                     font-family: 'Inter', sans-serif;
+                    @include mixins.breakpoint(800px){
+                        font-size: 10px;
+                    }
                 }
 
                 .market-cap {
@@ -269,6 +326,16 @@
 
                     .eth-color-1 {
                         color: #6C1182 !important;
+                    }
+
+                    @include mixins.breakpoint(800px){
+                        display: none;
+                    }
+                }
+
+                .curve{
+                    @include mixins.breakpoint(800px){
+                        display: none;
                     }
                 }
 
@@ -280,7 +347,9 @@
                     .eth-color-2 {
                         color: #D61919 !important;
                     }
-
+                    @include mixins.breakpoint(800px){
+                        font-size: 10px;
+                    }
                 }
 
                 button {
@@ -295,6 +364,9 @@
                     background-color: black;
                     @include mixins.breakpoint(1330px) {
                         font-size: 12px;
+                    }
+                    @include mixins.breakpoint(800px){
+                        width: 20%;
                     }
                 }
             }

@@ -19,18 +19,21 @@ new Chart(ctx, {
             label: 'BTC',
             data: [150, 600, 256, 230, 273, 100, 406, 210, 376, 700, 453, 100],
             borderWidth: 3,
+            borderColor: '#592795',
             lineTension: 0.4,
         },
         {
             label: 'ETH',
-            data: [null, null, null, 230, 273, 100, 406, 210, 376, 700, 453, 100].reverse(),
+            data: [null, null, null, null, 273, 100, 406, 210, 376, 700, 453, 100].reverse(),
             borderWidth: 3,
             lineTension: 0.4,
+            borderColor: '#4D91A5',
         },
         {
             label: 'Doge Coin',
-            data: [4, 242, 566, 309, 235, 600, 60, 330, 673, 246, 539, 100].reverse(),
+            data: [null, null, null, null, 235, 600, 60, 330, 673, 246, 539, 100],
             borderWidth: 3,
+            borderColor: '#1970D6',
             lineTension: 0.4,
         }]
     },
@@ -59,4 +62,11 @@ new Chart(ctx, {
             }
         }
     }
+});
+
+
+document.querySelector('.burger').addEventListener('click', function () {
+    document.querySelector('.burger').classList.toggle('active');
+    document.querySelector('.section-left').classList.toggle('active');
+    document.querySelector('body').classList.toggle('active');
 });

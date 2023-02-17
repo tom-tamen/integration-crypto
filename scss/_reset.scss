@@ -6,6 +6,12 @@
 
 body{
     background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    &.active{
+        overflow-y: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');

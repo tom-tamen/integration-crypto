@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <img class='logo' src="./assets/header/logo.svg" alt="logo">
@@ -23,9 +25,27 @@
         </div>
 
 
-        <a href="#">
+        <a class='pp' href="#">
             <img src="./assets/header/profilepicture.png" alt="account picture">
         </a>
+
+        <!-- <img class='burger' src="./assets/header/burger.png" alt="burger menu"> -->
+        <div class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 200 200">
+                <g stroke-width="6.5" stroke-linecap="round">
+                    <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                    <path
+                        d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                        fill="none" stroke="#fff" />
+                    <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                    <path
+                        d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                        fill="none" stroke="#fff" />
+                    <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                    <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                </g>
+            </svg>
+        </div>
     </header>
     <main>
         <section class="section-left">
@@ -34,8 +54,21 @@
                     <img src="./assets/left-section/dashboard.svg" alt="dashboard-logo">
                     <p>Dashboard</p>
                 </button>
-    
+
                 <div class="all-btn-left">
+
+                    <div class="notif-l">
+                        <a href="#">
+                            <img src="./assets/header/bell.svg" alt="notif logo">
+                        </a>
+                        <img class='alert' src="./assets/header/notif.svg" alt="alert">
+                    </div>
+    
+    
+                    <a class='pp-l' href="#">
+                        <img src="./assets/header/profilepicture.png" alt="account picture">
+                    </a>
+
                     <button class="btn-left">
                         <img src="./assets/left-section/dashboard-grey.svg" alt="inovice logo">
                         <p>Invoices</p>
@@ -62,7 +95,7 @@
                     </button>
                 </div>
             </div>
-            
+
             <button class="btn-left">
                 <img src="./assets/left-section/logout.svg" alt="help logo">
                 <p>Log Out</p>
@@ -91,7 +124,7 @@
             </div>
             <div class="mid-mid">
                 <div class="mid-mid-top">
-                    <div class="left-tab"> 
+                    <div class="left-tab">
                         <button>1H</button>
                         <button class="selected">1D</button>
                         <button>3D</button>
@@ -116,7 +149,7 @@
                 <canvas id="myChart"></canvas>
 
             </div>
-            
+
             <div class="mid-bot">
                 <div class="mid-bot-title">
                     <h2>Recent Transactions</h2>
@@ -137,7 +170,7 @@
                             <p>24h Change</p>
                             <p>+1,56</p>
                         </div>
-                        <img src="./assets/mid-section/btc-line.svg" alt="btc line">
+                        <img class="curve" src="./assets/mid-section/btc-line.svg" alt="btc line">
                         <button>Trade</button>
                     </div>
 
@@ -155,7 +188,7 @@
                             <p>24h Change</p>
                             <p class="eth-color-2">+1,56</p>
                         </div>
-                        <img src="./assets/mid-section/eth-line.svg" alt="eth line">
+                        <img class="curve" src="./assets/mid-section/eth-line.svg" alt="eth line">
                         <button>Trade</button>
                     </div>
 
@@ -164,84 +197,86 @@
         </section>
 
         <section class="section-right">
-            <h2>Recent Transactions</h2>
-                <div class="recent-transactions">
-                    <div class="transaction">
-                        <img src="./assets/right-section/usdt.svg" alt="usdt logo">
-                        <div class="justify">
-                            <div class="transaction-status">
-                                <p>Usdt</p>
-                                <p>Received</p>
-                            </div>
-                            <div class="transaction-details">
-                                <p class="positive">+$3,546</p>
-                                <p class="date">Today, 13:45 pm</p>
-                            </div>
+
+            <div class="recent-transactions">
+                <h2>Recent Transactions</h2>
+                <div class="transaction">
+                    <img src="./assets/right-section/usdt.svg" alt="usdt logo">
+                    <div class="justify">
+                        <div class="transaction-status">
+                            <p>Usdt</p>
+                            <p>Received</p>
+                        </div>
+                        <div class="transaction-details">
+                            <p class="positive">+$3,546</p>
+                            <p class="date">Today, 13:45 pm</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="transaction">
-                        <img src="./assets/right-section/bnb.png" alt="bnb logo">
-                        <div class="justify">
-                            <div class="transaction-status">
-                                <p>BNB</p>
-                                <p>Buy</p>
-                            </div>
-                            <div class="transaction-details">
-                                <p class="positive">+ 0.7546</p>
-                                <p class="date">Today, 5:45 am</p>
-                            </div>
+                <div class="transaction">
+                    <img src="./assets/right-section/bnb.png" alt="bnb logo">
+                    <div class="justify">
+                        <div class="transaction-status">
+                            <p>BNB</p>
+                            <p>Buy</p>
+                        </div>
+                        <div class="transaction-details">
+                            <p class="positive">+ 0.7546</p>
+                            <p class="date">Today, 5:45 am</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="transaction">
-                        <img src="./assets/right-section/lite.png" alt="Lite Coin logo">
-                        <div class="justify">
+                <div class="transaction">
+                    <img src="./assets/right-section/lite.png" alt="Lite Coin logo">
+                    <div class="justify">
 
-                            <div class="transaction-status">
-                                <p>Lite Coin</p>
-                                <p>Withdrawal</p>
-                            </div>
-                            <div class="transaction-details">
-                                <p class="negative">+ 0.7546</p>
-                                <p class="date">Today 7:55 am</p>
-                            </div>
+                        <div class="transaction-status">
+                            <p>Lite Coin</p>
+                            <p>Withdrawal</p>
+                        </div>
+                        <div class="transaction-details">
+                            <p class="negative">+ 0.7546</p>
+                            <p class="date">Today 7:55 am</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="transaction">
-                        <img src="./assets/right-section/bitcoin.svg" alt="bitcoin logo">
-                        <div class="justify">
+                <div class="transaction">
+                    <img src="./assets/right-section/bitcoin.svg" alt="bitcoin logo">
+                    <div class="justify">
 
-                            <div class="transaction-status">
-                                <p>Bitcoin</p>
-                                <p>Recieved</p>
-                            </div>
-                            <div class="transaction-details">
-                                <p class="positive">+ 2.7546</p>
-                                <p class="date">Today 8:55 am</p>
-                            </div>
+                        <div class="transaction-status">
+                            <p>Bitcoin</p>
+                            <p>Recieved</p>
+                        </div>
+                        <div class="transaction-details">
+                            <p class="positive">+ 2.7546</p>
+                            <p class="date">Today 8:55 am</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="transaction">
-                        <img src="./assets/right-section/eth.svg" alt="Etherum logo">
-                        <div class="justify">
-                            
-                            <div class="transaction-status">
-                                <p>Etherum</p>
-                                <p>Recieved</p>
-                            </div>
-                            <div class="transaction-details">
-                                <p class="positive">+ 1.646</p>
-                                <p class="date">Today 10:02 am</p>
-                            </div>
+                <div class="transaction">
+                    <img src="./assets/right-section/eth.svg" alt="Etherum logo">
+                    <div class="justify">
+
+                        <div class="transaction-status">
+                            <p>Etherum</p>
+                            <p>Recieved</p>
+                        </div>
+                        <div class="transaction-details">
+                            <p class="positive">+ 1.646</p>
+                            <p class="date">Today 10:02 am</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <h2>Assets</h2>
+            </div>
+
             <div class="assets">
+                <h2>Assets</h2>
                 <div class="asset">
                     <img src="./assets/right-section/btc-withe.svg" alt="bitcoin logo">
                     <p>Bitcoin</p>
@@ -266,4 +301,5 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

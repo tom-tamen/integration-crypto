@@ -89,7 +89,33 @@
                     </div>
                 </div>
             </div>
-            <div class="mid-mid"></div>
+            <div class="mid-mid">
+                <div class="mid-mid-top">
+                    <div class="left-tab"> 
+                        <button>1H</button>
+                        <button class="selected">1D</button>
+                        <button>3D</button>
+                        <button>1W</button>
+                        <button>1M</button>
+                        <button><img src="assets/mid-section/calandar.svg" alt="calandar logo"></button>
+                    </div>
+                    <div class="right-select">
+                        <div class="select">
+                            <img src="./assets/mid-section/white-btc.svg" alt="bitcoin logo">
+                            <p>BTC</p>
+                            <img class="chevron" src="./assets/mid-section/chevron.svg" alt="chevron">
+                        </div>
+                        <img class='switch' src="./assets/mid-section/double-arrow.svg" alt="switch button">
+                        <div class="select">
+                            <img src="./assets/mid-section/white-eth.svg" alt="bitcoin logo">
+                            <p>ETH</p>
+                            <img class="chevron" src="./assets/mid-section/chevron.svg" alt="chevron">
+                        </div>
+                    </div>
+                </div>
+                <canvas id="myChart"></canvas>
+
+            </div>
             
             <div class="mid-bot">
                 <div class="mid-bot-title">
@@ -142,61 +168,74 @@
                 <div class="recent-transactions">
                     <div class="transaction">
                         <img src="./assets/right-section/usdt.svg" alt="usdt logo">
-                        <div class="transaction-status">
-                            <p>Usdt</p>
-                            <p>Received</p>
-                        </div>
-                        <div class="transaction-details">
-                            <p class="positive">+$3,546</p>
-                            <p class="date">Today, 13:45 pm</p>
-                        </div>
-                    </div>
-
-                    <div class="transaction">
-                        <img src="./assets/right-section/bnb.svg" alt="bnb logo">
-                        <div class="transaction-status">
-                            <p>BNB</p>
-                            <p>Buy</p>
-                        </div>
-                        <div class="transaction-details">
-                            <p class="positive">+ 0.7546</p>
-                            <p class="date">Today, 5:45 am</p>
+                        <div class="justify">
+                            <div class="transaction-status">
+                                <p>Usdt</p>
+                                <p>Received</p>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="positive">+$3,546</p>
+                                <p class="date">Today, 13:45 pm</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="transaction">
-                        <img src="./assets/right-section/litecoin.svg" alt="Lite Coin logo">
-                        <div class="transaction-status">
-                            <p>Lite Coin</p>
-                            <p>Withdrawal</p>
+                        <img src="./assets/right-section/bnb.png" alt="bnb logo">
+                        <div class="justify">
+                            <div class="transaction-status">
+                                <p>BNB</p>
+                                <p>Buy</p>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="positive">+ 0.7546</p>
+                                <p class="date">Today, 5:45 am</p>
+                            </div>
                         </div>
-                        <div class="transaction-details">
-                            <p class="negative">+ 0.7546</p>
-                            <p class="date">Today 7:55 am</p>
+                    </div>
+
+                    <div class="transaction">
+                        <img src="./assets/right-section/lite.png" alt="Lite Coin logo">
+                        <div class="justify">
+
+                            <div class="transaction-status">
+                                <p>Lite Coin</p>
+                                <p>Withdrawal</p>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="negative">+ 0.7546</p>
+                                <p class="date">Today 7:55 am</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="transaction">
                         <img src="./assets/right-section/bitcoin.svg" alt="bitcoin logo">
-                        <div class="transaction-status">
-                            <p>Bitcoin</p>
-                            <p>Recieved</p>
-                        </div>
-                        <div class="transaction-details">
-                            <p class="positive">+ 2.7546</p>
-                            <p class="date">Today 8:55 am</p>
+                        <div class="justify">
+
+                            <div class="transaction-status">
+                                <p>Bitcoin</p>
+                                <p>Recieved</p>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="positive">+ 2.7546</p>
+                                <p class="date">Today 8:55 am</p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="transaction">
                         <img src="./assets/right-section/eth.svg" alt="Etherum logo">
-                        <div class="transaction-status">
-                            <p>Etherum</p>
-                            <p>Recieved</p>
-                        </div>
-                        <div class="transaction-details">
-                            <p class="positive">+ 1.646</p>
-                            <p class="date">Today 10:02 am</p>
+                        <div class="justify">
+                            
+                            <div class="transaction-status">
+                                <p>Etherum</p>
+                                <p>Recieved</p>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="positive">+ 1.646</p>
+                                <p class="date">Today 10:02 am</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,5 +262,8 @@
             </div>
         </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

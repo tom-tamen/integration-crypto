@@ -6,6 +6,7 @@
     @include mixins.flexdef();
     justify-content: space-between;
     padding: 40px 0 20px 0;
+    
     .btn-left{
         @include mixins.flexdef(10px);
         flex-direction: row;
@@ -22,7 +23,7 @@
 
     }
     .dashboard-btn{
-        background: linear-gradient(0.25turn, #CC00FF, #1970D6, #FAFF00);
+        background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
         border-radius: 10px;
         img{
             width: 40px;

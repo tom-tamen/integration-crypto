@@ -4,4 +4,8 @@ main{
     width: 100vw;
     @include mixins.flexdef;
     flex-direction: row;
+
+    @include mixins.breakpoint(1000px){
+        flex-direction: column;
+    }
 }
